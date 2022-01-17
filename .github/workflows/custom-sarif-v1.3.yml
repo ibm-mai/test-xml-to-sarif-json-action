@@ -1,6 +1,6 @@
 # This is a basic workflow that is manually triggered
 
-name:  SARIF VERCEL V1.3
+name:  SARIF VERCEL V1.4
 
 # Controls when the action will run. Workflow runs when manually triggered using the UI
 # or API.
@@ -30,7 +30,7 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Convert XML to SARIF Json
-      uses: maisaranphon/xml-to-sarif-json-action@v1.3
+      uses: maisaranphon/xml-to-sarif-json-action@v1.4
 
     - name: Upload SARIF file
       uses: github/codeql-action/upload-sarif@v1
