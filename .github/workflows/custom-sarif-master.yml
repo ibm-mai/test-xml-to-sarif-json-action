@@ -31,6 +31,8 @@ jobs:
 
     - name: Convert XML to SARIF Json
       uses: maisaranphon/xml-to-sarif-json-action@master
+      with:
+        xml-input-filepath: ./input_codenarc.xml
 
     - name: Upload SARIF file
       uses: github/codeql-action/upload-sarif@v1
